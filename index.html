@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> INDEXTEST  </title>
+	<meta charset= 'utf=8'/>
+
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css"> -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<meta name= 'viewport' content= 'width=device-width, intial-scale= 1.0'>
+</head>
+
+<body class= "no-margin" onload= 'preLoadImages(),startSlideShow()'>
+<!--Navigation-->
+<nav  class="nav" type="Navigation ">
+<!--nav-bar-1-->
+	<div class="row nav-bar-1">
+	   <!--logo-->
+	   <div id="logo">
+			<span><a href="" style=""><img id="nav-logo" src="images/logo.png" ></a></span>
+			<span><a  id="nav-try-prime" href="">Try Prime</a></span>
+	   	</div> <!--/.logo-->
+
+	   <!--Search box-->
+	   <div id="search-box" style="" onselect="changeSearchBorder()">
+	   	<!--Form-->
+	      <form class="search-form search-div" name="search" style="border-radius: 5px; background-color: white; ">
+	      	<!--Selection of Goods and services-->
+
+	      	<select  id="nav-select" onselect="resize()"  >
+	      		<option class="search-options" value="">All</option>
+	      		<option class="search-options" value="">All Departments</option>
+	      		<option class="search-options" value="">Alexa Skills</option>
+	      		<option class="search-options" value="">Amazon Video</option>
+	      		<option class="search-options" value="">Amazon Warehouse</option>
+	      		<option class="search-options" value="">Amazon Appliances</option>
+	      		<option class="search-options" value="">Amazon Apps & games</option>
+	      		<option class="search-options" value="">Arts, Crafts & sewing</option>
+	      		<option class="search-options" value="">Auomative Parts and Accesories</option>
+	      		<option class="search-options" value="">Baby</option>
+	      		<option class="search-options" value="">Beauty & Personal Care</option>
+	      		<option class="search-options" value="">Books</option>
+	      		<option class="search-options" value="">CD and Vinyl</option>
+	      		<option class="search-options" value="">Cell Phone & Accesories</option>
+	      		<option class="search-options" value="">Clothing, Shoes & Jewerly</option>
+	      		<option class="search-options" value="">Women</option>
+	      		<option class="search-options" value="">Men</option>
+	      		<option class="search-options" value="">Girls</option>
+	      		<option class="search-options" value="">Boys</option>
+	      		<option class="search-options" value="">Baby</option>
+	      		<option class="search-options" value="">Collectible & FIne Art</option>
+	      		<option class="search-options" value="">Computer</option>
+	      		<option class="search-options" value="">Courses</option>
+	      		<option class="search-options" value="">Credit & Payments</option>
+	      		<option class="search-options" value="">Digital Music
+	      		<option class="search-options" value="">Electronics</option>
+	      		<option class="search-options" value="">Gift Cards</option>
+	      		<option class="search-options" value="">Grocery and Gourment food</option>
+	      		<option class="search-options" value="">Handmade</option>
+	      		<option class="search-options" value="">Health, household & babycare</option>
+	      		<option class="search-options" value="">Industrial & Scientific</option>
+	      		<option class="search-options" value="">kindle Store</option>
+	      		<option class="search-options" value="">Luggage & Travel gear</option>
+	      		<option class="search-options" value="">Luxury beauty</option>
+	      		<option class="search-options" value="">Magazine Subscription</option>
+	      		<option class="search-options" value="">Movies & TV</option>
+	      		<option class="search-options" value="">Musical Instruments</option>
+	      		<option class="search-options" value="">Office products</option>
+	      		<option class="search-options" value="">Patio, Lawn & Garden</option>
+	      		<option class="search-options" value="">Pet supplies</option>
+	      		<option class="search-options" value="">Prime panty</option>
+	      		<option class="search-options" value="">Software</option>
+	      		<option class="search-options" value="">Sports & Outdoors</option>
+	      		<option class="search-options" value="">Tools & Home improvements</option>
+	      		<option class="search-options" value="">Toys & Games</option>
+	      		<option class="search-options" value="">Vehicles</option>
+	      		<option class="search-options" value="">Video games</option>
+	      		<option class="search-options" value="">Wine</option>
+	     	</select><!--/.Selection of Goods and services-->
+
+	     	<!--Search Text Box-->
+	      	<input type="text" name="search"   id="text-box-1" style="float: left;border:none; color: blue;" ><!--/.Search Text Box-->
+
+	      	<!--Search button-->
+
+	      	<button type="search" name="search" id="search-icon" class="fa fa-search search-div" style="float: right;width: 40px;" ></button><!--/.Search button-->
+
+	      </form><!--Form-->
+
+	   </div><!--/.Search box-->
+
+	   <!--Announcement-->
+	   <div id="announcement" onmouseover="colour()" >
+
+		   <a href="#"><img  src="images/st_patrick.jpg" width="50px" height="40px;" > </a>
+		   <a href="#"><h1 id="patrick" class= "no-margin" >St Patrick's Day</h1></a>
+
+	   </div><!--/.Announcement-->
+
+	</div><!--/.nav-bar-1-->
+
+
+
+<!--nav-bar-2-->
+	<div class="nav-bar-2">
+		<!--departments-->
+		<div  id= "departments1" class="departments departments-vis"  onmouseover="changeDisplay('departments')" >
+			<a href=""   class="menu" >
+			Departments
+			<i class="fa fa-caret-down" style="color: white; padding: 0 10px 0 10px" ></i>
+			</a>
+
+
+<!--DEPARTMENTS******************************************************************************************************-->
+<!--departments-col-->
+	<div id="departments" class="departments-col departments-col-p dept-height departments-vis"> <!-- onmouseleave="changeDisplay2('departments')"  -->
+
+
+					<!-- dept-span-div dept1 -->
+					<div  id="dept1" class="dept-span-div dept1" onmouseover="changeDisplay('amazon-video')" onmouseout="changeDisplay2('amazon-video')">
+						<span  class="dept-span" >
+							<p id="am-vid1" class="departments-col-p">Amazon Video</p>
+							<i  id="am-vid2" class="fa fa-chevron-right dept-col-chevron"  ></i>
+						</span>
+
+						<!--AMAZON VIDEO-->
+
+					</div><!-- /.dept-span-div dept1 -->
+
+
+
+
+
+
+
+
+
+
+
+					<div  id="dept1" class="dept-span-div dept1" onmouseover ="changeDisplay('amazon-music')" onmouseout="changeDisplay2('amazon-music')">
+						<span  class="dept-span" >
+							<p class="departments-col-p">Amazon Music</p>
+							<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+						</span>
+
+
+
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div  id="dept2" class="dept-span-div dept1" onmouseover="changeDisplay('appstore-android')" onmouseout="changeDisplay2('appstore-android')"  >
+		<span  class="dept-span" >
+			<p class="departments-col-p">Appstore for Android</p>
+			<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+
+
+
+
+
+	<div  id="dept3" class="dept-span-div dept1 " ><!-- onmouseenter="changeDisplay('appstore-android')" onmouseleave="changeDisplay('appstore-android')" -->
+		<span  class="dept-span" >
+			<p class="departments-col-p">Prime Photo and Print</p>
+			<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+
+	<div  id="dept4" class="dept-span-div dept1" >
+		<span  class="dept-span" >
+			<p class="departments-col-p">Kindle E-readers and Books</p>
+			<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+
+	<div  id="dept5" class="dept-span-div dept1" >
+		<span  class="dept-span" >
+			<p class="departments-col-p">Fire Tablet</p>
+			<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+
+	<div  id="dept6" class="dept-span-div dept1" >
+		<span  class="dept-span" >
+			<p class="departments-col-p">Fire TV</p>
+			<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+
+	<div  id="dept7" class="dept-span-div dept1" >
+		<span  class="dept-span" >
+			<p class="departments-col-p">Echo and Alexa</p>
+			<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+
+	<hr>
+	<div  id="dept8" class="dept-span-div dept1" >
+		<span  class="dept-span" >
+			<p class="departments-col-p">Books And Audible</p>
+			<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+	<div  id="dept9" class="dept-span-div dept1" >
+		<span  class="dept-span" >
+			<p class="departments-col-p">Electronics & Computers</p>
+			<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+
+	<div  id="dept10" class="dept-span-div dept1" >
+		<span  class="dept-span" >
+			<p class="departments-col-p">Beauty, Health and Food</p>
+			<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+
+	<div  id="dept12" class="dept-span-div dept1" >
+		<span  class="dept-span" >
+			<p class="departments-col-p">Beauty, Health and Food</p>
+			<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+	<div  id="dept13" class="dept-span-div dept1" >
+		<span  class="dept-span" >
+			<p class="departments-col-p">Toys, Kids & Baby</p>
+			<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+	<div  id="dept14" class="dept-span-div dept1" >
+	<span  class="dept-span" >
+		<p class="departments-col-p">Clothing Shoes & Jewelry</p>
+		<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+	<div  id="dept15" class="dept-span-div dept1" >
+		<span  class="dept-span" >
+			<p class="departments-col-p">Handmade</p>
+			<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+	<div  id="dept16" class="dept-span-div dept1" >
+		<span  class="dept-span" >
+			<p class="departments-col-p">Sports & Outdoors</p>
+			<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+
+	<div  id="dept17" class="dept-span-div dept1" >
+		<span  class="dept-span" >
+			<p class="departments-col-p">Automotive & Industrial</p>
+			<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+	<hr>
+
+	<div  id="dept18" class="dept-span-div dept1" >
+		<span  class="dept-span" >
+			<p class="departments-col-p">Home Services</p>
+			<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+	<div  id="dept1" class="dept-span-div dept1" >
+		<span  class="dept-span" >
+			<p class="departments-col-p">Credit & Payment Products</p>
+			<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+	<div  id="dept1" class="dept-span-div dept1" >
+		<span  class="dept-span" >
+			<p class="departments-col-p">Full store directory</p>
+			<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+	</div>
+
+
+
+		</div><!--/.departments-col-->
+
+<!--DEPARTMENTS******************************************************************************************************-->
+</div><!--/.departments-->
+
+
+
+		<!--Menu-->
+		<div class="menu">
+			<p><a href="" class="menu">Your Amazon.com</a></p>
+			<p><a href="" class="menu">Today's Deal</a></p>
+			<p><a href="" class="menu">Gifts Card & Registry</a></p>
+			<p><a href="" class="menu">Sell</a></p>
+			<p><a href="" class="menu">Help</a></p>
+		</div><!--/.Menu-->
+
+		<!--Account Sign in and Cart-->
+		<div class="account">
+			<!--Sign In & Account Info-->
+			<div class="account" id="signin">
+				<span class="nav-signin nav-signin-header"> <a href="">Hello. Sign in.</a></span>
+				<span class="nav-signin nav-signin-lists"><a href="">Accounts & Lists<i class="fa fa-caret-down" style="color: white; padding: 0 10px 0 10px" ></i></a></span>
+			</div><!--/.Sign In & Account Info-->
+
+
+			<!--Orders link-->
+			<div class="account">
+					<a href="">Orders</a>
+			</div><!--/.Orders link-->
+
+
+			<!--Try Prime Link-->
+			<div class="account">
+			<a href="">Try Prime<i class="fa fa-caret-down" style="color: white; padding: 0 10px 0 10px" ></i></a>
+			</div><!--/.Try Prime Link-->
+
+			<!--Cart and checkout link-->
+			<div class="account" style="display: inline-block;">
+				<div class="no-margin no-padding" >
+					<h4 id="cart-items" class="no-padding no-margin" >0</h4>
+				</div>
+				<div class="no-margin no-padding" style="display: flex">
+					<span><img  width="30px" src="images/cart-icon.png"></span>
+					<span><a  class="account" style="padding-bottom: 25px;" href="">Cart</a></span>
+				</div>
+			</div><!--/.Cart and checkout link-->
+		</div><!--/.Account Sign in and Cart-->
+
+
+	</div><!--/.nav-bar-2-->
+</nav>
+
+<!--Carosuel-->
+<div>
+	<div class="carousel">
+
+		<img   name="carousel-img" class="carousel" src="images/slide1.jpg">
+
+
+	</div>
+</div><!--/.Carosuel-->
+
+
+
+<!--Contents-->
+<div class="row-contents">
+	<!--Column 1-->
+	<div class="col-1 col-contents">
+		<div class="col-contents-main">
+			<p class="col-1-welcome center">Welcome </p>
+			<p class="col-font-black  col-1-signin center" >Sign in for the best experience</p>
+			<a  class ="center btn-col-1" href="">Sign in securely</a>
+
+		</div>
+		<hr class="content-divider-1">
+		<div class="contents-sublink  col-1-contents-sublink col-font-black";">
+			New to Amazon. <a  class="col-font" href="">Start here.</a>
+		</div>
+
+	</div><!--/.Column 1-->
+
+
+	<!--Column 2-->
+	<div class="col-2 col-contents">
+		<!--Col-contents-main-->
+		<div  class="col-contents-main">
+			<!--col-contents-main-head-->
+			<div class="col-contents-main-head">
+				<span class="col-contents-main-head">Popular departments</span>
+			</div><!--/.col-contents-main-head-->
+
+
+			<!--col-content-main-items-->
+			<div class="col-contents-main-items">
+				<!--col-contents-main-items-row-1-->
+			 	<div class="col-contents-main-items-row">
+			 		<!--col-contents-main-sub-1-->
+					<div class="col-contents-main-sub-1" style="display: block;">
+						<a href=""><img class= "col-contents-main-image" src="images/image1.png"></a>
+						<p class="col-font-black">Kindle</p>
+					</div><!--/.col-contents-main-sub-1-->
+
+
+					<!--col-contents-main-sub-2-->
+					<div class="col-contents-main-sub-2">
+						<a href=""><img class= "col-contents-main-image" src="images/image2.png"></a>
+						<p class="col-font-black" >Amazon Video</p>
+					</div><!--/.col-contents-main-sub-2-->
+
+				</div><!--/.col-content-main-items-row-1-->
+
+
+				<!--col-content-main-items-row-2-->
+				<div class="col-contents-main-items-row">
+					<!--col-content-main-sub-3-->
+					<div class="col-contents-main-sub-3">
+					<a href=""><img  class= "col-contents-main-image" src="images/image3.png"></a>
+					<p class="col-font-black">Grocery</p>
+
+					</div><!--/.col-content-main-sub-3-->
+
+
+					<!--col-content-main-sub-4-->
+					<div class="col-contents-main-sub-4">
+						<a href=""><img  class= "col-contents-main-image" src="images/image4.png"></a>
+						<p class="col-font-black">Music</p>
+					</div><!--/.col-content-main-sub-4-->
+
+				</div><!--/.col-content-main-items-row-2-->
+
+			</div><!--/.col-content-main-items-->
+
+		</div><!--/.Col-contents-main-->
+
+			<hr class="content-divider-2">
+			<!--contents-sublink-->
+			<div class="contents-sublink contents-sublink-2">
+				<a  class="col-font" href="">Show all departments</a>
+			</div><!--/.contents-sublink-->
+
+
+	</div><!--/.Column 2-->
+
+
+	<!--Column 3-->
+	<div class="col-3 col-contents">
+		<!--col-contents-main-head-->
+		<div class="col-contents-dress">
+			<p class=" ">The dress shop</p>
+		</div>
+		<!--/.col-contents-main-head-->
+
+		<div class="col-3-image">
+		<img src="images/dress.jpg" width="320px" height="400px">
+
+		</div>
+
+		<hr class="content-divider-3">
+		<!--contents-sublink-->
+		<div class="contents-sublink">
+			<a class="col-font contents-sublink-3" href="">Shop women's dresses</a>
+		</div>
+		<!--contents-sublink-->
+	</div>
+	<!--/.Column 3-->
+
+	<!--Column 4-->
+	<div class="col-4 ">
+		<!--Column 4 Row 1-->
+		<div class="col-4-row-1 ">
+			<img  width="320px" height="258px" src="images/giftcard.png">
+		</div>
+		<!--/.Column 4 Row 1-->
+		<!--Column 4 Row 2-->
+		<div class="col-4-row-2 col-contents-col-4">
+			<div class="col-contents-deal">
+				<p>Deal of the Day</p>
+			</div>
+			<div style="display: flex;justify-content: space-between; position: relative;">
+					<div class="deal" style="display: block; padding-left: 20px">
+						<span class="deal-price " style="display: block; font-size: 25px" >N150,000</span>
+						<span class="deal-discount col-font-black " >List <del>N200,000</del> (26% off)</span>
+						<p class="col-font" style="margin-top: 110px; margin-bottom: 23px"><a href="" class="col-font">Shop all deals</a><p>
+					</div>
+				<div>
+					<img  width="150px" height="150px" src="images/phone.png">
+				</div>
+			</div>
+
+			<div class="contents-sublink">
+
+			</div>
+		</div><!--/.Column 4 Row 2-->
+
+	</div>
+	<!--/.Column 4-->
+</div>
+<!--Contents-->
+
+<div class="back-to-top ">
+	<a class="col-font-white" href="">Back to top</a>
+</div>
+<!--footer-->
+<footer>
+	<!--footer-nav-1-->
+	<div class="footer-nav-1">
+		<!--get to know us-->
+		<div class="footer-nav-col footer-nav-col-1">
+			<span>Get to Know us</span>
+			<p class="footer-nav-txt"><a  href="">Career</a></p>
+			<p class="footer-nav-txt"><a  href="">About Amazon</a></p>
+			<p class="footer-nav-txt"><a  href="">Investor Relations</a></p>
+			<p class="footer-nav-txt"><a  href="">Amazon Devices</a></p>
+		</div><!--/.get to know us-->
+		<!--Make money with us-->
+		<div class="footer-nav-col footer-nav-col-2">
+			<span>Make Money With Us</span>
+			<p class="footer-nav-txt"><a href="">Sell on Amazon</a></p>
+			<p class="footer-nav-txt"><a href="">Sell your Services on Amazon</a></p>
+			<p class="footer-nav-txt"><a href="">Sell on Amazon Business</a></p>
+			<p class="footer-nav-txt"><a href="">Sell Your Apps on Amazon</a></p>
+			<p class="footer-nav-txt"><a href="">Become an Affiliate</a></p>
+			<p class="footer-nav-txt"><a href="">Advertise Your Products</a></p>
+			<p class="footer-nav-txt"><a href="">Self-Publish with us</a></p>
+			<p class="footer-nav-txt"><a href="">Become an Amazon Vendor</a></p>
+			<p class="footer-nav-txt"><a href=""> &#62 See All</a></p>
+
+		</div><!--/.Make money with us-->
+		<!--Amazon payment methods-->
+		<div class="footer-nav-col footer-nav-col-3">
+			<span>Amazon Product payments</span>
+			<p class="footer-nav-txt"><a href="">Amazon Rewards Visa Signature Cards</a></p>
+			<p class="footer-nav-txt"><a href="">Amazon.com Store Card</a></p>
+			<p class="footer-nav-txt"><a href="">Amazon.com Corporate Credit Line</a></p>
+			<p class="footer-nav-txt"><a href="">Shop with Points</a></p>
+			<p class="footer-nav-txt"><a href="">Credit Card Marketplace</a></p>
+			<p class="footer-nav-txt"><a href="">Reload Your Balance</a></p>
+			<p class="footer-nav-txt"><a href="">Amazon Currency Converter</a></p>
+		</div><!--/.Amazon payment methods-->
+		<!--Lets help you-->
+		<div class="footer-nav-col footer-nav-col-4">
+			<span>Let Us Help You</span>
+			<p class="footer-nav-txt"><a href="">Your Account</a></p>
+			<p class="footer-nav-txt"><a href="">Your Orders</a></p>
+			<p class="footer-nav-txt"><a href="">Shipping Rates & Policies</a></p>
+			<p class="footer-nav-txt"><a href="">Amazon Prime</a></p>
+			<p class="footer-nav-txt"><a href="">Returns & Replacements</a></p>
+			<p class="footer-nav-txt"><a href="">Manage Your Content and Devices</a></p>
+			<p class="footer-nav-txt"><a href="">Amazon Assistant</a></p>
+			<p class="footer-nav-txt"><a href="">Help</a></p>
+		</div><!--/.Lets help you-->
+
+	</div><!--/.footer-nav-1-->
+
+	<!--<hr class="content-divider-footnav"> divider may not be used-->
+
+	<!--footer-nav-2-->
+	<div class="footer-nav-2">
+		<div class="footer-nav-2-logo">
+			<img id="footer-logo" src="images/logo.png" >
+		</div>
+		<div class="footer-nav-2">
+		 	<a href="">Australia</a>
+		 	<a href="">Brasil</a>
+		 	<a href="">Canada</a>
+		 	<a href="">China</a>
+		 	<a href="">France</a>
+		 	<a href="">Germany</a>
+		 	<a href="">India</a>
+		 	<a href="">Italy</a>
+		 	<a href="">Japan</a>
+		 	<a href="">Mexico</a>
+		 	<a href="">Netherlands</a>
+		 	<a href="">Nigeria</a>
+		 	<a href="">Spain</a>
+		 	<a href="">United Kingdom</a>
+
+		</div>
+
+	</div><!--/.footer-nav-2-->
+
+	<!--#####################################################################################################-->
+	<!--footer-nav-3-->
+	<div class="footer-nav-3">
+		<table class="footer-tab">
+			<!--footer-nav-row-1-->
+			<tr class="footer-nav-row">
+				<!-- row 1 column 1-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">Amazon Drive</p>
+						<p class="footer-nav-3-txt">Unlimited Cloud StorageFrom Amazon</p>
+					</a>
+				</td><!--/.row 1 column 1-->
+
+				<!--row 1 column 2-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">6pm</p>
+						<p class="footer-nav-3-txt">Score deals on fashion brands</p>
+					</a>
+				</td><!--/. row 1 column 2-->
+
+				<!-- row 1 column 3-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">AbeBooks</p>
+						<p class="footer-nav-3-txt">Books,art <b> & collectibles</p>
+					</a>
+				</td><!--/. row 1 column 3-->
+
+				<!-- row 1 column 4-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">ACX</p>
+						<p class="footer-nav-3-txt">Audiobook Publishing<b>Made Easy</p>
+					</a>
+				</td><!--/.row 1 column 4-->
+
+				<!-- row 1 column 5-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">Alexa</p>
+						<p class="footer-nav-3-txt">Action Analyticals for the Web</p>
+					</a>
+				</td><!--/.row 1 column 5-->
+
+				<!-- row 1 column 6-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">Amazon Business</p>
+						<p class="footer-nav-3-txt">Everything for your business</p>
+					</a>
+				</td><!--/.row 1 column 6-->
+
+				<!-- row 1 column 7-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">AmazonFresh</p>
+						<p class="footer-nav-3-txt">Groceries & More Right to your Door </p>
+					</a>
+				</td><!--/.row 1 column 7-->
+
+			</tr><!--/.footer-nav-row-1-->
+
+<!--ROW 2-->
+				<!--footer-nav-row-1-->
+			<tr class="footer-nav-row">
+				<!-- row 1 column 1-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">Amazon Global</p>
+						<p class="footer-nav-3-txt">Ship Orders Internationally</p>
+					</a>
+				</td><!--/.row 1 column 1-->
+
+				<!--row 1 column 2-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">Home Services</p>
+						<p class="footer-nav-3-txt">Handpicked Pros Hapiness Guarantee</p>
+					</a>
+				</td><!--/. row 1 column 2-->
+
+				<!-- row 1 column 3-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">Amazon Inspire</p>
+						<p class="footer-nav-3-txt">Free Digital Educational Resources</p>
+					</a>
+				</td><!--/. row 1 column 3-->
+
+				<!-- row 1 column 4-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">Amazon Rapids</p>
+						<p class="footer-nav-3-txt">Fun Stories for Kids on the go</p>
+					</a>
+				</td><!--/.row 1 column 4-->
+
+				<!-- row 1 column 5-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">Amazon Restaurants</p>
+						<p class="footer-nav-3-txt">Food Delivery from <b>local restaurants</p>
+					</a>
+				</td><!--/.row 1 column 5-->
+
+				<!-- row 1 column 6-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">Amazon Video Direct</p>
+						<p class="footer-nav-3-txt">Video Distribution Made Easy</p>
+					</a>
+				</td><!--/.row 1 column 6-->
+
+				<!-- row 1 column 7-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">Amazon Web Services</p>
+						<p class="footer-nav-3-txt">Scalable Cloud Computing Services</p>
+					</a>
+				</td><!--/.row 1 column 7-->
+
+			</tr><!--/.footer-nav-row-1-->
+
+<!--ROW 3-->
+
+				<!--footer-nav-row-1-->
+			<tr class="footer-nav-row">
+				<!-- row 1 column 1-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">Audible</p>
+						<p class="footer-nav-3-txt">Download Audio books</p>
+					</a>
+				</td><!--/.row 1 column 1-->
+
+				<!--row 1 column 2-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">BeautyBar.com</p>
+						<p class="footer-nav-3-txt">Prestige Beauty Delivered</p>
+					</a>
+				</td><!--/. row 1 column 2-->
+
+				<!-- row 1 column 3-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">Book Depository</p>
+						<p class="footer-nav-3-txt">Books with Free Delivery Worldwide</p>
+					</a>
+				</td><!--/. row 1 column 3-->
+
+				<!-- row 1 column 4-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">Box Office Mojo</p>
+						<p class="footer-nav-3-txt">Find Movie Box Office Data</p>
+					</a>
+				</td><!--/.row 1 column 4-->
+
+				<!-- row 1 column 5-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">Casa.com</p>
+						<p class="footer-nav-3-txt">Kitchen, Storage & Everything Home</p>
+					</a>
+				</td><!--/.row 1 column 5-->
+
+				<!-- row 1 column 6-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">ComiXology</p>
+						<p class="footer-nav-3-txt">Thousands of Digital Comics</p>
+					</a>
+				</td><!--/.row 1 column 6-->
+
+				<!-- row 1 column 7-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">CreateSpace</p>
+						<p class="footer-nav-3-txt">Indie Print Publishing Made Easy </p>
+					</a>
+				</td><!--/.row 1 column 7-->
+
+			</tr><!--/.footer-nav-row-1-->
+
+<!--ROW 4-->
+				<!--footer-nav-row-1-->
+			<tr class="footer-nav-row">
+				<!-- row 1 column 1-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">Diapers.com</p>
+						<p class="footer-nav-3-txt">Everything But The Baby</p>
+					</a>
+				</td><!--/.row 1 column 1-->
+
+				<!--row 1 column 2-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">DPReview</p>
+						<p class="footer-nav-3-txt">Digital Photography</p>
+					</a>
+				</td><!--/. row 1 column 2-->
+
+				<!-- row 1 column 3-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">East Dane</p>
+						<p class="footer-nav-3-txt">Designer Men's Fashion</p>
+					</a>
+				</td><!--/. row 1 column 3-->
+
+				<!-- row 1 column 4-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">Fabric</p>
+						<p class="footer-nav-3-txt">Sewing, Quilting & Knitting</p>
+					</a>
+				</td><!--/.row 1 column 4-->
+
+				<!-- row 1 column 5-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">Goodreads</p>
+						<p class="footer-nav-3-txt">Book reviews & recommendations</p>
+					</a>
+				</td><!--/.row 1 column 5-->
+
+				<!-- row 1 column 6-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">IMDb</p>
+						<p class="footer-nav-3-txt">Movies, TV & Celebrities</p>
+					</a>
+				</td><!--/.row 1 column 6-->
+
+				<!-- row 1 column 7-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">IMDBPro</p>
+						<p class="footer-nav-3-txt">Get Info Entertainment Professionals Need</p>
+					</a>
+				</td><!--/.row 1 column 7-->
+
+			</tr><!--/.footer-nav-row-1-->
+<!--ROW 5-->
+				<!--footer-nav-row-1-->
+			<tr class="footer-nav-row">
+				<!-- row 1 column 1-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">Junglee.com</p>
+						<p class="footer-nav-3-txt">Shop Online in India</p>
+					</a>
+				</td><!--/.row 1 column 1-->
+
+				<!--row 1 column 2-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">Kindle Direct Publishing</p>
+						<p class="footer-nav-3-txt">Indie Digital Publishing Made Easy</p>
+					</a>
+				</td><!--/. row 1 column 2-->
+
+				<!-- row 1 column 3-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">Prime Now</p>
+						<p class="footer-nav-3-txt">FREE 2-Hour Delivery on Everyday Items</p>
+					</a>
+				</td><!--/. row 1 column 3-->
+
+				<!-- row 1 column 4-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">Shopbop</p>
+						<p class="footer-nav-3-txt">Desiner Fashion Brands</p>
+					</a>
+				</td><!--/.row 1 column 4-->
+
+				<!-- row 1 column 5-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">Soap.com</p>
+						<p class="footer-nav-3-txt">Health,Beauty & Home Essentials</p>
+					</a>
+				</td><!--/.row 1 column 5-->
+
+				<!-- row 1 column 6-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">TenMarks.com</p>
+						<p class="footer-nav-3-txt">Math Activities for Kids & Schools</p>
+					</a>
+				</td><!--/.row 1 column 6-->
+
+				<!-- row 1 column 7-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">Wag.com</p>
+						<p class="footer-nav-3-txt">Everything for Your Pet </p>
+					</a>
+				</td><!--/.row 1 column 7-->
+
+			</tr><!--/.footer-nav-row-1-->
+
+<!--ROW 6-->
+
+				<!--footer-nav-row-1-->
+			<tr class="footer-nav-row">
+				<!-- row 1 column 1-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">Warehouse Deals</p>
+						<p class="footer-nav-3-txt">Open-Box Discounts</p>
+					</a>
+				</td><!--/.row 1 column 1-->
+
+				<!--row 1 column 2-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">Whispercast</p>
+						<p class="footer-nav-3-txt">Discover & Distribute Digital Content</p>
+					</a>
+				</td><!--/. row 1 column 2-->
+
+				<!-- row 1 column 3-->
+				<td>
+					<a href="">
+						<p class="footer-nav-3-title">Withoutabox</p>
+						<p class="footer-nav-3-txt">Submit to Film Festivals</p>
+					</a>
+				</td><!--/. row 1 column 3-->
+
+				<!-- row 1 column 4-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">Woot!</p>
+						<p class="footer-nav-3-txt">Deals and Shenanigans</p>
+					</a>
+				</td><!--/.row 1 column 4-->
+
+				<!-- row 1 column 5-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">Yoyo.com</p>
+						<p class="footer-nav-3-txt">A Happy Place To Shop For Toys</p>
+					</a>
+				</td><!--/.row 1 column 5-->
+
+				<!-- row 1 column 6-->
+				<td>
+					<a href="">
+			        	<p class="footer-nav-3-title">Zappos</p>
+						<p class="footer-nav-3-txt">Shoes & Clothing</p>
+					</a>
+				</td><!--/.row 1 column 6-->
+
+
+
+			</tr><!--/.footer-nav-row-1-->
+
+
+		</table>
+	</div><!--/.footer-nav-3-->
+
+
+
+	<!--footer-nav-4 Copyright-->
+	<div class="footer-nav-4">
+		<a href="">Conditions of Use</a>
+		<a href="">Privacy Notice</a>
+		<a href="">Interest-Based Ads</a>
+		<span>&copy1996-2017, Amazon.com, Inc. or its affiliates</span>
+
+
+	</div><!--/.footer-nav-4-->
+
+
+
+
+</footer><!--footer-->
+
+<div id="pop-out" >
+
+							<!--AMAZON VIDEO-->
+
+							<div id="amazon-video" onmouseleave="changeDisplay2('pop-out')"  >
+								<div   class="amazon-video dept-height">
+												<div class="amazon-video-col">
+													<p class="dept-head">Amazon Video</p>
+													<p class="dept-subhead"><a href="">All Videos</a></p>
+													<p class="dept-txt">All TV Shows Movies and more</p>
+													<p class="dept-subhead"><a href="">Included with prime</a></p>
+													<p class="dept-txt">All Amazon Originals Available</p>
+													<p class="dept-subhead"><a href="">Amazon channels</a></p>
+													<p class="dept-txt">TV Stations</p>
+													<p class="dept-subhead"><a href="">Rent or Buy</a></p>
+													<p class="dept-txt">New Movies to watch</p>
+													<p class="dept-subhead"><a href="">Free to watch</a></p>
+													<hr>
+													<p class="dept-subhead"><a href="">Your WatchList</a></p>
+													<p class="dept-subhead"><a href="">Watch Anywhere</a></p>
+													<p class="dept-subhead"><a href="">Getting Started</a></p>
+												</div>
+												<div class="amazon-video-col">
+													<p class="dept-head">More to Explore</p>
+													<p class="dept-subhead"><a href="">Originals</a></p>
+													<p class="dept-txt">Amazon original tv movies and series</p>
+													<p class="dept-subhead"><a href="">Style code live</a></p>
+													<p class="dept-txt">Watch Live weeknights at 9 ET</p>
+
+												</div>
+								</div>
+
+
+						</div><!--/.AMAZON VIDEO-->
+
+
+							<!--AMAZON MUSIC-->
+							<div id="amazon-music" onmouseleave="changeDisplay2('pop-out')" >
+								<div   class="amazon-video dept-height">
+												<div class="amazon-video-col">
+													<p class="dept-head">Stream Music</p>
+													<p class="dept-subhead"><a href="">Amazon Music Unlimited</a></p>
+													<p class="dept-txt">stream tens of millions of movies weekly</p>
+													<p class="dept-subhead"><a href="">Prime Music</a></p>
+													<p class="dept-txt">Prime members can streams a growing selection of two million songs.all ad free</p>
+													<hr>
+													<p class="dept-subhead"><a href="">Open Web Player</a></p>
+													<p class="dept-txt">music.amazon.com</p>
+													<hr>
+													<p class="dept-head">Buy Music</p>
+													<p class="dept-subhead"><a href="">CD & Vinyl</a></p>
+													<p class="dept-txt">purchase millions of CD and Vinyl from amzon store</p>
+													<p class="dept-subhead"><a href="">Download Store</a></p>
+													<p class="dept-txt">downloas songs from the amazon store</p>
+
+												</div>
+												<div class="amazon-video-col">
+													<p class="dept-head">Stream the latest Amazon Music Unmilmited</p>
+													<p class="dept-subhead"><a href="">Learn more</a></p>
+
+												</div>
+								</div></div><!--/.AMAZON Music-->
+
+
+							<!--APPSTORE FOR ANDROID-->
+							<div id="appstore-android" onmouseleave="changeDisplay2('pop-out)" >
+								<div   class="amazon-video dept-height">
+												<div class="amazon-video-col">
+													<p class="dept-head">App store for Android</p>
+													<p class="dept-subhead"><a href="">Underground apps and games</a></p>
+													<p class="dept-txt">stream tens of millions of movies weekly</p>
+													<p class="dept-subhead"><a href="">All apps and games</a></p>
+													<p class="dept-txt">Prime members can streams a growing selection of two million songs.all ad free</p>
+													<p class="dept-subhead"><a href="">Games</a></p>
+													<p class="dept-txt">music.amazon.com</p>
+
+													<p class="dept-subhead"><a href="">Amazon coin</a></p>
+													<p class="dept-txt">purchase millions of CD and Vinyl from amzon store</p>
+													<hr>
+
+													<p class="dept-subhead"><a href="">Download Amazon Games</a></p>
+													<p class="dept-txt">downloas songs from the amazon store</p>
+													<p class="dept-subhead"><a href="">Amazon apps</a></p>
+													<p class="dept-txt">downloas songs from the amazon store</p>
+													<p class="dept-subhead"><a href="">Your apps and devices</a></p>
+													<p class="dept-txt">downloas songs from the amazon store</p>
+
+												</div>
+												<div class="amazon-video-col">
+													<p class="dept-head">Stream the latest Amazon Music Unmilmited</p>
+													<p class="dept-subhead"><a href="">Learn more</a></p>
+
+												</div>
+								</div></div><!--/.APPSTORE FOR ANDROID-->
+
+
+</div>
+<script src="js/amazon.js"></script>
+<script src="js/jquery.js"></script>
+
+</body>
+
+
+
+
+</html>

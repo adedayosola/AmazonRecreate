@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset= 'utf=8'/>
+	
+	<link rel="stylesheet" href="dropdowncss.css" type="text/css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" type="text/css">
+	<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+	<meta name= 'viewport' content= 'width=device-width, intial-scale= 1.0'>
+</head>
+<body>
+
+
+<div class="nav-bar-2">
+		<!--departments-->
+		<div  id= "departments1" class="departments departments-vis"   ><!--onmouseout="hideMenu('departments')"-->
+			<a href=""   class="menu" >
+			Departments 
+			<i class="fa fa-caret-down" style="color: white; padding: 0 10px 0 10px" ></i>
+			</a> 	
+
+
+<!--DEPARTMENTS******************************************************************************************************-->
+<!--departments-col-->
+	<div id="departments" class="departments-col departments-col-p dept-height departments-vis" >
+
+	<ul>
+		<li>
+			<span  class="dept-span" >
+				<p  class="departments-col-p">Amazon Video</p>
+				<i   class="fa fa-chevron-right dept-col-chevron"  ></i>
+			</span>
+		</li>
+
+		<li>
+			<span  class="dept-span" >
+				<p class="departments-col-p">Amazon Music</p>
+				<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+			</span>
+		</li>
+		<li>
+		<span  class="dept-span" >
+				<p class="departments-col-p">Appstore for Android</p>
+				<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+			
+		</li>
+		<li>
+			<span  class="dept-span" >
+				<p class="departments-col-p">Prime Photo and Print</p>
+				<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+		</li>
+		<li>
+			<span  class="dept-span" >
+				<p class="departments-col-p">Kindle E-readers and Books</p>
+				<i class="fa fa-chevron-right dept-col-chevron"  ></i>
+		</span>
+		</li>
+		
+
+
+
+	</ul>
+		
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+	
+	
+		</div><!--/.departments-col-->
+
+<!--DEPARTMENTS******************************************************************************************************-->
+</div><!--/.departments-->
+
+
+
+
+
+<!--AMAZON VIDEO-->
+
+<div id="amazon-video"  >
+								<div   class="amazon-video dept-height">
+												<div class="amazon-video-col">
+													<li class="dept-head">Amazon Video</li>
+													<li class="dept-subhead"><a href="">All Videos</a></li>
+													<li class="dept-txt">All TV Shows Movies and more</li>
+													<li class="dept-subhead"><a href="">Included with prime</a></li>
+													<li class="dept-txt">All Amazon Originals Available</li>
+													<li class="dept-subhead"><a href="">Amazon channels</a></li>
+													<li class="dept-txt">TV Stations</li>
+													<li class="dept-subhead"><a href="">Rent or Buy</a></li>
+													<li class="dept-txt">New Movies to watch</li>
+													<li class="dept-subhead"><a href="">Free to watch</a></li>
+													<hr>
+													<li class="dept-subhead"><a href="">Your WatchList</a></li>
+													<li class="dept-subhead"><a href="">Getting Started</a></li>
+												</div>
+												<div class="amazon-video-col">
+													<li class="dept-head">More to Explore</li>
+													<li class="dept-subhead"><a href="">Originals</a></li>
+													<li class="dept-txt">Amazon original tv movies and series</li>
+													<li class="dept-subhead"><a href="">Style code live</a></li>
+													<li class="dept-txt">Watch Live weeknights at 9 ET</li>
+												
+												</div>
+								</div>
+
+
+						</div><!--/.AMAZON VIDEO-->
+
+
+<!--AMAZON MUSIC-->
+							
+						<div id="amazon-music"  >
+								<div   class="amazon-video dept-height">
+												<div class="amazon-video-col">
+													<li class="dept-head">Amazon Music</li>
+													<li class="dept-subhead"><a href="">Prime Music</a></li>
+													<li class="dept-txt">Music</li>
+													<li class="dept-subhead"><a href="">Included with prime</a></li>
+													<li class="dept-txt">All Amazon Originals Available</li>
+													
+												</div>
+												<div class="amazon-video-col">
+													<li class="dept-head">More to Explore</li>
+													<li class="dept-subhead"><a href="">Originals</a></li>
+													<li class="dept-txt">Amazon original tv movies and series</li>
+													<li class="dept-subhead"><a href="">Style code live</a></li>
+													<li class="dept-txt">Watch Live weeknights at 9 ET</li>
+												
+												</div>
+								</div>
+
+
+						</div><!--/.Appstore-->
+						<div id="amazon-music"  >
+								<div   class="amazon-video dept-height">
+												<div class="amazon-video-col">
+													<li class="dept-head">APPSTORE</li>
+													<li class="dept-subhead"><a href="">APPS</a></li>
+													<li class="dept-txt">APPS</li>
+													<li class="dept-subhead"><a href="">Included with prime</a></li>
+													<li class="dept-txt">All Amazon Originals Available</li>
+													
+												</div>
+												<div class="amazon-video-col">
+													<li class="dept-head">More to Explore</li>
+													<li class="dept-subhead"><a href="">Originals</a></li>
+													<li class="dept-txt">Amazon original tv movies and series</li>
+													<li class="dept-subhead"><a href="">Style code live</a></li>
+													<li class="dept-txt">Watch Live weeknights at 9 ET</li>
+												
+												</div>
+								</div>
+
+
+						</div><!--/.Appstore-->
+
+
+
+
+
+<script type="text/javascript">
+	
+	var acc = document.getElementsByClassName("amazon-video");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick= function(){
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.getElementsByClassName("amazon-video");
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
